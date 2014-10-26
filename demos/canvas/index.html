@@ -35,7 +35,7 @@
         // Each pixel has RGBA values with range 0-255
         image.data[ i ] = (x / canvas.width) * 256;
         image.data[ i + 1 ] = (y / canvas.height) * 256;
-        image.data[ i + 2 ] = 0;
+        image.data[ i + 2 ] = 255;
         image.data[ i + 3 ] = 255;
   }
   context.putImageData( image, 0, 0 );
