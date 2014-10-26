@@ -30,7 +30,7 @@
 
   var x = 0, y = 0;
   for ( var i = 0, j = 0; i < image.data.length; i += 4, j++ ) {
-    if ( x % 10 ! = 0) {
+    if ( (i+j) % 2 ! = 0) {
         x = j % canvas.width;
         y = x == 0 ? y + 1 : y;
         // Each pixel has RGBA values with range 0-255
